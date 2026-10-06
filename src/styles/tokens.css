@@ -1,0 +1,35 @@
+:root {
+  /* Surfaces: black to graphite */
+  --bg: #060607;
+  --bg-raised: #0b0c0f;
+  --surface: #111317;
+  --surface-2: #181b20;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.18);
+
+  /* Text: white / silver */
+  --text: #f1f3f7;
+  --text-muted: #a0a7b4;
+  --text-dim: #7d8594;
+
+  /* Accents: electric cyan with restrained violet */
+  --cyan: #35c8f4;
+  --cyan-soft: rgba(53, 200, 244, 0.14);
+  --violet: #8b7cf6;
+  --violet-soft: rgba(139, 124, 246, 0.14);
+
+  /* Type */
+  --font-display: "Sora Variable", "Sora", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter Variable", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Layout */
+  --container: 1180px;
+  --gutter: clamp(20px, 4vw, 40px);
+  --section-space: clamp(64px, 9vw, 120px);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --header-height: 68px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
