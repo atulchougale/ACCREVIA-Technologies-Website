@@ -1,0 +1,22 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Routing: the build writes dist/_redirects, which maps each clean URL (/about, /services/...) to its own static
+# HTML file with HTTP 200. There is deliberately NO catch-all "/* /index.html 200" rewrite: unknown URLs fall
+# through to dist/404.html, which Netlify serves with a real HTTP 404 status.
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"

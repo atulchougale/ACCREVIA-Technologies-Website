@@ -1,0 +1,41 @@
+:root {
+  /* Surfaces: black to charcoal */
+  --bg: #000000;
+  --bg-raised: #070707;
+  --surface: #0d0d0d;
+  --surface-2: #151515;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.18);
+
+  /* Text */
+  --text: #f5f5f5;
+  --text-muted: #a8a8a8;
+  --text-dim: #8a8a8a;
+
+  /* Brand energy: burnt orange, orange, gold */
+  --burnt: #c94a00;
+  --accent: #ff6a00;
+  --accent-bright: #ff8a00;
+  --gold: #ffb000;
+  --warm-white: #ffd27a;
+  --red-orange: #d92d00;
+  --accent-soft: rgba(255, 106, 0, 0.14);
+  --ember: #ff8a00;
+  --ember-soft: rgba(201, 74, 0, 0.16);
+
+  /* Type */
+  --font-display: "Sora Variable", "Sora", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter Variable", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Layout */
+  --container: 1440px;
+  --container-outer:1240px;
+  --gutter: clamp(20px, 5vw, 48px);
+  --section-space: clamp(48px, 9vw, 112px);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --header-height: 66px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
